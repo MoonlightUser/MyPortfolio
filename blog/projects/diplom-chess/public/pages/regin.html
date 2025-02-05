@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/regin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" type="image/svg+xml" href="../src/images/logo-icon.ico" />
+    <title>Regin</title>
+</head>
+<body>
+    <div id="regin-form" class="regin">
+        <a class="logo-wrapper" href="../main.html">
+            <img class="logo"src="../src/images/logo-white.png" alt="">
+        </a>
+        <div class="regin__email form">
+            <label class="regin__email-label label" for="email">email</label>
+            <div class="error" id="email-error"></div>
+            <input class="regin__email-input input" type="text" id="regin-form-email" name="email">
+        </div>
+        <div class="regin__username form">
+            <label class="regin__username-label label" for="username">username</label>
+            <div class="error" id="username-error"></div>
+            <input class="regin__username-input input" type="text" id="regin-form-username" name="username">
+        </div>
+        <div class="regin__password form">
+            <label class="regin__password-label label" for="password">password</label>
+            <div class="error" id="password-error"></div>
+            <input class="regin__password-input input" type="password" id="regin-form-password" name="password">
+        </div>
+        <div class="regin__repeat-password form">
+            <label class="regin__repeat-password-label label" for="password">repeat password</label>
+            <div class="error" id="repeat-password-error"></div>
+            <input class="regin__repeat-password-input input" type="password" id="regin-form-repeat-password" name="repeat-password">
+        </div>
+        <input class="regin__submit-button" type="submit" value="Regin" id="regin-form-submit">
+    </div>
+    <script type="module" src="../src/js/functions/token.js"></script>
+    <script type="module" src="../src/js/functions/database.js"></script>
+    <script type="module" src="../src/js/autorisation/regin.js"></script>
+</body> 
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/chess.js@0.11.0/chess.js"></script>
+    <link rel="stylesheet" href="../src/css/game.css">
+    <link rel="icon" type="image/svg+xml" href="../src/images/logo-icon.ico" />
+    <title>Game</title>
+</head>
+<body>
+    <header>
+        <div id="home" class="logo-wrapper-main">
+            <img src="../src/images/logo-white.png" alt="logo" class="logo-image"/>
+        </div>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="game">
+            <div id="board">
+                <script>
+                </script>
+            </div>
+            <div class="nav">
+                <button id="draw">draw</button>
+                <button id="resign">resign</button>
+            </div>
+        </div>
+        <div class="turn-wrapper">
+            <div class="title">
+                Its now turn for: 
+            </div>
+            <div id="turn"></div>
+        </div>
+        <div class="chat">
+            <div id="chat-messages">
+                <div class="chat-message">
+                    <!-- <div class="chat-message-author">Author</div>
+                    <div class="chat-message-text">Text</div> -->
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="about-me">
+          <div class="created-by">Created by Tymur Marenych © 2023</div>
+          <div class="social-networks">
+            <div class="social-network github">
+              <a class="social-network-link" href="https://github.com/MoonlightUser"><img class="social-network-img" src="../src/images/socialmedia-icons/github.png" alt=""></a>
+            </div>
+            <div class="social-network instagram">
+              <a class="social-network-link" href="https://www.instagram.com/tymur.ua"><img class="social-network-img" src="../src/images/socialmedia-icons/instagram.png" alt=""></a>
+            </div>
+            <div class="social-network telegram">
+              <a class="social-network-link" href="https://t.me/tymur_ua"><img class="social-network-img" src="../src/images/socialmedia-icons/telegram.png" alt=""></a>
+            </div>
+            <div class="social-network spotify">
+              <a class="social-network-link" href="https://open.spotify.com/user/3147xch65jfmdqanmpzddgwnuhau?si=b84cfa8edc594068"><img class="social-network-img" src="../src/images/socialmedia-icons/spotify.png" alt=""></a>
+            </div>
+            <div class="social-network discord">
+              <a class="social-network-link" href="https://discordapp.com/users/1033057863511318628"><img class="social-network-img" src="../src/images/socialmedia-icons/discord.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+        <div class="partnerships">
+          <div class="partnerships-title">Partnerships:</div>
+          <div class="partnerships__myschool">
+            <a class="partnerships-link" href="https://sawstonvc.org/"><img class="partnerships-img" src="../src/images/partnerships/sawstanvc.png" alt=""></a>
+          </div>
+          <div class="partnerships__myitschool">
+            <a class="partnerships-link" href="https://itstep.org/en"><img class="partnerships-img" src="../src/images/partnerships/it-step.png" alt=""></a>
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="../src/js/game.js"></script>
+</body>
+</html>

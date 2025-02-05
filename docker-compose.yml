@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  # Static Website Server (NGINX)
+  website:
+    image: nginx:latest
+    container_name: website_server
+    volumes:
+      - ./blog:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - "3003:80"  # Default HTTP port
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass  # Configure the root user password
+      MYSQL_DATABASE: diplom_chess  # Optional: Pre-create the database
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+
+  # CHESS
+  chess_php:
+    build: ./database
+    container_name: chess_php
+    ports:
+      - "3001:80"  # Expose PHP on port 3001
+    depends_on:
+      - mysql
+
+  chess_node:
+    build: ./diplom-chess-server
+    container_name: chess_node
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+  
+
+volumes:
+  db_data:

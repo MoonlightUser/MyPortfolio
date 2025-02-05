@@ -1,0 +1,101 @@
+@import url(./style.css);
+@import url(./scrollbar.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/loginbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-wrapper{
+    width: 200px;
+    height: 55px;
+    margin-bottom: 60px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.label{
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color-primary);
+}
+
+.input{
+    padding-left: 10px;
+    border: none;
+    width: 275px;
+    height: 30px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-color-black);
+    background-color: var(--background-color-perple-light);
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--background-color-perple-dark);
+}
+
+.login__username{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__password{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__submit-button{
+    transition: 0.3s;
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--background-color-white);
+    background-color: var(--background-color-perple-dark);
+    border: none;
+    cursor: pointer;
+}
+
+.error{
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color-error);
+}
+
+.login__submit-button:hover{
+    background-color: var(--font-color-secondary-light);
+}

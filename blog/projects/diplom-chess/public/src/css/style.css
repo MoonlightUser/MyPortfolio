@@ -1,0 +1,76 @@
+:root {
+  --font-color-secondary: #7B61FF;
+  --font-color-secondary-light: #747bff;
+  --font-color-secondary-dark: #3137a0;
+  --font-color-primary: #dadada;
+  --font-color-error: #df1818;
+  --font-color-black: #010101;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --space-website : 200px;
+  --button-color: #000000;
+  --background-color: #19181F;
+  --background-color-dark: #0b0b0e;
+  --background-color-light: #1b1b1b;
+  --background-color-white: #fdfdfd;
+  --background-color-perple-light: #EFECFF;
+  --background-color-perple-dark: #b37aff;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.swal-modal{
+  background-color: var(--background-color);
+}
+.swal-title{
+  color: var(--font-color-primary);
+}
+.swal-text{
+  color: var(--font-color-primary);
+}
+.swal-button{
+  transition: 0.3s;
+  background-color: var(--button-color);
+  color: var(--font-color-primary);
+}
+.swal-button:not([disabled]):hover{
+  background-color: var(--font-color-secondary-light);
+  color: var(--font-color-primary);
+}
+
+.swal-icon--success__hide-corners,.swal-icon--success:after, .swal-icon--success:before{
+  background-color: #00000000;
+}
+
+
+.swal-button:focus{
+  box-shadow: none;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
