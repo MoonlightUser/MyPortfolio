@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon-32x32.png" />
+    <title>Store</title>
+</head>
+
+<body>
+    <div class="main__page">
+        <header>
+            <div class="logo_wrapper">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <button id="all" class="nav_btn">All</button>
+                <button id="mobiles" class="nav_btn">Mobiles</button>
+                <button id="leptops" class="nav_btn">Leptops</button>
+                <button id="tvs" class="nav_btn">TVs</button>
+                <button id="keyboards" class="nav_btn">Keyboards</button>
+            </div>
+            <div class="not-autorisated">
+                <button id="login" class="nav_btn">Log in</button>
+                <button id="signin" class="signin">Sign in</button>
+            </div>
+            <div class="autorisated">
+                <div class="money"></div>
+                <button class="basket-btn"><img class="basket-img" src="img/basket.png" alt=""></button>
+                <div class="user-name"></div>
+                <div class="user-avatar-wrapper"><img class="user-avatar" src="" alt="404"></div>
+                <button class="logout">log-out</button>
+            </div>
+        </header>
+        <main>
+            <div class="maket">
+                <img class="ad" src="img/ad.jpg" alt="">
+            </div>
+            <div class="manipulation_area">
+                <div class="filters">
+                    <button id="rating" class="filter_btn">by rating</button>
+                    <button id="chep-exp" class="filter_btn">cheap - expensive</button>
+                    <button id="exp-chep" class="filter_btn">expensive - cheap</button>
+                </div>
+                <div class="products">
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+
+
+    <div class="regin__page">
+        <header>
+            <div class="space"></div>
+            <div class="logo_wrapper">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <button id="main_page__reg" class="nav_btn">Main Page</button>
+            </div>
+        </header>
+        <div class="registration">
+            <form name="myFormRegin" action="" onsubmit="return validateForm(`myFormRegin`)" method="get">
+                <div class="reg-part">
+                    <div class="title">Name: </div>
+                    <input type="text" name="fname">
+                </div>
+                <div class="reg-part">
+                    <div class="title">Second name:</div>
+                    <input type="text" name="sname">
+                </div>
+                <div class="reg-part">
+                    <div class="title">Age: </div>
+                    <input type="number" name="age">
+                </div>
+                <div class="reg-part">
+                    <div class="title">Email: </div>
+                    <input type="email" name="email">
+                </div>
+                <div class="reg-part">
+                    <div class="title">Password: </div>
+                    <input type="password" name="password">
+                </div>
+                <div class="reg-part">
+                    <div class="avatar">Your avatar(Url must end with <br>.png .jpg .jpeg .webp .avif .gif .svg): </div>
+                    <input type="text" name="avatar">
+                </div>
+                <input class="reg_btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="login__page">
+        <header>
+            <div class="space"></div>
+            <div class="logo_wrapper">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <button id="main_page__log" class="nav_btn">Main Page</button>
+            </div>
+        </header>
+        <div class="registration">
+            <form name="myFormLogin" action="" onsubmit="return loginCheck(`myFormLogin`)" method="get">
+                <div class="reg-part">
+                    <div class="title">Email: </div>
+                    <input type="text" name="email">
+                </div>
+                <div class="reg-part">
+                    <div class="title">Password: </div>
+                    <input type="password" name="password">
+                </div>
+                <input class="reg_btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="totall__page">
+        <header>
+            <div class="logo_wrapper">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <button id="main_page__totall" class="nav_btn">Main Page</button>
+            </div>
+            <div class="accaunt">
+                <div class="user-name"></div>
+                <div class="user-avatar-wrapper"><img class="user-avatar" src="" alt="404"></div>
+            </div>
+        </header>
+        <div class="purchases">
+        </div>
+    </div>
+
+
+    <script src="dataBase.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

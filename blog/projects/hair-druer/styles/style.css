@@ -1,0 +1,25 @@
+/* .container{
+    background-color: bisque;
+} */
+
+.logo-header-img{
+    width: 80px;
+    height: 80px;
+}
+
+.nav-header-wrapper{
+    cursor: pointer;
+}
+
+.courusel-body-img{
+    height: 500px;
+}
+
+.carousel{
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
