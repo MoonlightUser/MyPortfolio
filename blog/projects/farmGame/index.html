@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>farmGame</title>
+    <link rel="stylesheet" href="assets\styles\app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="page_1" class="page">
+        <div class="text">
+            <span>Hey! This is a game in which you will feel like a farmer!
+                You will need to buy plots of land and grow something on them for money. GLHF ;)</span>
+        </div>
+        <div class="playBtnWrapper">
+            <button id='playBtn' class="playBtn">Play</button>
+        </div>
+    </div>
+
+    <div id = "page_2" class="page">
+        <div class="menu">
+            <div class="profile">
+                <img class="avatar" src="img/avatar.png" alt="#">
+                <span id = "menu_name">MABCDEFGHI</span>
+            </div>
+            <div class="money">
+                <span id="menu_money">Your money: 0£ (20£/5sec)</span>
+                <img class="coin" src="img/coin.gif" alt="#">
+            </div>
+            <div class="pickWrapper">
+                <button id="pickBtn"><img class="pickImg" src="img/pick.png" alt=""></button>
+            </div>
+        </div>
+        <div class="workSpace">
+            <div class="landItems">
+                <span class = "lvlForLand" id = 'lvlOf0'>NOT BOUGHT (100£)</span>
+                <button id="land_0" class="land"><img class="landImg" src="img/factoy.png" alt=""></button>
+            </div>
+            <div class="landItems">
+                <span class = "lvlForLand" id = 'lvlOf1'>NOT BOUGHT (100£)</span>
+                <button id="land_1" class="land"><img class="landImg" src="img/factoy.png" alt=""></button>
+            </div>
+            <div class="landItems">
+                <span class = "lvlForLand" id = 'lvlOf2'>NOT BOUGHT (100£)</span>
+                <button id="land_2" class="land"><img class="landImg" src="img/factoy.png" alt=""></button>
+            </div>
+            <div class="landItems">
+                <span class = "lvlForLand" id = 'lvlOf3'>NOT BOUGHT (100£)</span>
+                <button id="land_3" class="land"><img class="landImg" src="img/factoy.png" alt=""></button>
+            </div>
+            <div class="landItems">
+                <span class = "lvlForLand" id = 'lvlOf4'>NOT BOUGHT (100£)</span>
+                <button id="land_4" class="land"><img class="landImg" src="img/factoy.png" alt=""></button>
+            </div>
+            <div class="landItems">
+                <span class = "lvlForLand" id = 'lvlOf5'>NOT BOUGHT (100£)</span>
+                <button id="land_5" class="land"><img class="landImg" src="img/factoy.png" alt=""></button>
+            </div>
+        
+        </div>
+    </div>
+    <script src="assets\scripts\app.js"></script>
+    <script src="assets\scripts\vendor.js"></script>
+</body>
+</html>
