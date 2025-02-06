@@ -1,5 +1,6 @@
 # My Blog Project
 
+http//78.149.69.229:3003
 A simple blog showcasing posts and personal notes. This project uses Docker for local development and testing.
 
 ## Prerequisites
