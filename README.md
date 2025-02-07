@@ -1,6 +1,6 @@
 # My Blog Project
 
-http//78.149.69.50:3003  -  current hosted website
+http://78.149.69.50:3003  -  current hosted website
 
 A simple blog showcasing posts and personal notes. This project uses Docker for local development and testing.
 
