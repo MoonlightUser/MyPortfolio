@@ -1,0 +1,27 @@
+{
+  "name": "tymur-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal portfolio and a self-hosted multiplayer chess learning project",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --env-file-if-exists=.env --watch server/index.js",
+    "test": "node --test",
+    "check": "node scripts/check.js",
+    "format": "prettier --write \"*.{json,md,yml}\" \"server/**/*.js\" \"scripts/**/*.js\" \"test/**/*.js\" \"docs/**/*.md\" \"blog/chess/*.{js,css,html}\" blog/index.html blog/portfolio.css \".github/**/*.yml\"",
+    "format:check": "prettier --check \"*.{json,md,yml}\" \"server/**/*.js\" \"scripts/**/*.js\" \"test/**/*.js\" \"docs/**/*.md\" \"blog/chess/*.{js,css,html}\" blog/index.html blog/portfolio.css \".github/**/*.yml\""
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="A multiplayer chess learning project by Tymur Marenych."
+    />
+    <title>Chess by Tymur</title>
+    <link rel="stylesheet" href="/chess/style.css" />
+    <script type="module" src="/chess/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/">← Tymur's portfolio</a><span>CHESS BY TYMUR</span
+      ><button id="logout" hidden>Sign out</button>
+    </header>
+    <main>
+      <div class="intro">
+        <p class="eyebrow">A FULL-STACK LEARNING PROJECT</p>
+        <h1>Your next move.</h1>
+        <p>
+          Create a game, invite a friend, and play. Moves are checked and saved
+          on the server.
+        </p>
+      </div>
+      <p id="notice" role="status" aria-live="polite"></p>
+      <section id="auth" class="panel">
+        <h2>Take a seat</h2>
+        <p>
+          Create an account or sign in. Use a unique password for this demo.
+        </p>
+        <form id="auth-form">
+          <label
+            >Username<input
+              name="username"
+              autocomplete="username"
+              required
+              minlength="3"
+              maxlength="20"
+              pattern="[A-Za-z0-9_-]+" /></label
+          ><label
+            >Password<input
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              maxlength="128"
+          /></label>
+          <p class="hint">
+            New accounts: 3–20 letters, numbers, underscores or hyphens;
+            password at least 12 characters.
+          </p>
+          <div class="actions">
+            <button name="intent" value="login">Sign in</button
+            ><button name="intent" value="register" class="secondary">
+              Create account
+            </button>
+          </div>
+        </form>
+      </section>
+      <section id="lobby" class="panel" hidden>
+        <div class="heading">
+          <h2 id="welcome">Games</h2>
+          <div>
+            <button id="refresh" class="secondary">Refresh games</button>
+            <button id="create">New game</button>
+          </div>
+        </div>
+        <p>
+          Join an open game or resume one of yours. Open games are visible to
+          signed-in players.
+        </p>
+        <div id="rooms"></div>
+      </section>
+      <section id="game" hidden>
+        <div class="heading">
+          <h2 id="players"></h2>
+          <button id="back" class="secondary">All games</button>
+        </div>
+        <p id="game-status" aria-live="polite"></p>
+        <div class="game-layout">
+          <div>
+            <div
+              id="board"
+              class="board"
+              role="group"
+              aria-label="Chess board"
+            ></div>
+            <p class="hint">
+              Select a piece, then a highlighted square. You can also use Tab
+              and Enter.
+            </p>
+            <label
+              >Promote pawn to<select id="promotion">
+                <option value="q">Queen</option>
+                <option value="r">Rook</option>
+                <option value="b">Bishop</option>
+                <option value="n">Knight</option>
+              </select></label
+            >
+            <div class="actions">
+              <button id="draw" class="secondary">Offer draw</button
+              ><button id="resign" class="secondary">Resign / cancel</button>
+            </div>
+          </div>
+          <aside class="panel">
+            <h3>Game chat</h3>
+            <div id="messages" role="log" aria-label="Game chat"></div>
+            <form id="chat-form">
+              <label
+                >Message<input
+                  name="message"
+                  required
+                  maxlength="500"
+                  autocomplete="off" /></label
+              ><button>Send</button>
+            </form>
+            <h3>Moves</h3>
+            <p id="moves"></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Built for learning. No clocks, matchmaking or spectator mode. Updates
+      arrive every two seconds.
+    </footer>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 document.getElementById('startButton').addEventListener('click', function() {
-    const numberInput = document.getElementById('numberInput').value;
-    if (numberInput && numberInput > 0) {
+    const numberInput = Number(document.getElementById('numberInput').value);
+    if (Number.isInteger(numberInput) && numberInput > 0 && numberInput <= 10000) {
+        document.querySelectorAll('.point, .mainPoint').forEach(point => point.remove());
 
         let pointA = document.createElement("div")
         let pointB = document.createElement("div")
@@ -40,7 +41,7 @@ document.getElementById('startButton').addEventListener('click', function() {
             document.body.appendChild(point)
         }
 
-        while(1){
+        while(i < numberInput){
             currentPoint = document.createElement("div")
             let randomCorner = getRandomArbitraryCorner()
             currentX = (randomCorner[0]+currentX) / 2
@@ -53,6 +54,6 @@ document.getElementById('startButton').addEventListener('click', function() {
             }
         }
 } else {
-    alert('Please enter a valid number between 1 and 1000.');
+    alert('Please enter a whole number between 1 and 10000.');
 }
 });
