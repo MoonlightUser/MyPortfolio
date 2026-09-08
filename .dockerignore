@@ -1,0 +1,14 @@
+.git
+**/node_modules
+**/vendor
+.env*
+data
+test
+docs
+database
+diplom-chess-server
+mysql
+blog/projects/diplom-chess
+blog/*.json
+blog/index.js
+blog/*.pdf

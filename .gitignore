@@ -1,0 +1,18 @@
+node_modules/
+vendor/
+.env
+.env.*
+!.env.example
+data/
+*.sqlite*
+*.log
+coverage/
+playwright-report/
+test-results/
+.DS_Store
+Thumbs.db
+# Retired stack, retained only in Git history (and any existing local checkout).
+/database/
+/diplom-chess-server/
+/mysql/
+/blog/projects/diplom-chess/
