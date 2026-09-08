@@ -106,7 +106,7 @@ function render(room) {
     room.result ||
     (room.status === 'waiting'
       ? 'Waiting for another player. They can join from the lobby.'
-      : `${chess.turn() === 'w' ? room.white : room.black} to move${chess.isCheck() ? ' — check' : ''}${room.drawOffer ? ` · Draw offered by ${room.drawOffer}` : ''}`);
+      : `${chess.turn() === 'w' ? room.white : room.black} to move${chess.isCheck() ? ' - check' : ''}${room.drawOffer ? ` · Draw offered by ${room.drawOffer}` : ''}`);
   $('draw').textContent =
     room.drawOffer && room.drawOffer !== username
       ? 'Accept draw'

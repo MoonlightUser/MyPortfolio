@@ -93,7 +93,7 @@ export function createApp({
     )
       fail(
         400,
-        'Use a 3–20 character username and a 12–128 character password.',
+        'Use a 3-20 character username and a 12-128 character password.',
       );
     if (store.user(username)) fail(409, 'Username unavailable.');
     const encoded = await hashPassword(password);
@@ -230,7 +230,7 @@ export function createApp({
   });
   app.post('/api/rooms/:id/chat', (req, res) => {
     if (!text(req.body?.message, 500) || !req.body.message.trim())
-      fail(400, 'Use 1–500 characters.');
+      fail(400, 'Use 1-500 characters.');
     req.room.messages.push({
       name: req.username,
       message: req.body.message.trim(),

@@ -29,7 +29,3 @@ Sessions expire after ten hours and are revoked on logout. Same-origin JSON muta
 - Finished games are retained. There is no automatic retention policy or account deletion UI yet; a public service needs these and operational monitoring.
 - Rate limiting is in memory and resets on restart. Behind the supplied host proxy all requests share the proxy IP, so limits apply collectively. Configure a verified proxy topology before changing Express `trust proxy`; never blindly trust arbitrary forwarded headers.
 - Early experiments are not represented as production applications. The fractal demos now reject non-integer/excessive input and clear the previous drawing.
-
-## Maintenance attribution
-
-Tymur built the original projects. The 2026 presentation and security refactor was prepared with Codex assistance. When discussing this version in an interview, distinguish the original work from the assisted changes and explain the design and tests in your own words.

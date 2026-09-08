@@ -1,8 +1,8 @@
-# Tymur — portfolio & multiplayer chess
+# Tymur - portfolio & multiplayer chess
 
-Computer Science student at the University of Liverpool (BSc, 2026–2029), building web applications and exploring algorithms. Interested in UK software engineering internships for Summer 2027.
+Computer Science student at the University of Liverpool (BSc, 2026-2029), learning web development through small projects. Interested in UK software engineering internships for Summer 2027.
 
-This repository brings together my portfolio, Chess by Tymur and earlier visual experiments. My original chess project used Node.js, PHP/MySQL, JWT and Pusher; the maintained version uses one Node.js server with SQLite and server-validated chess rules. See [architecture and maintenance attribution](docs/ARCHITECTURE.md) for that distinction.
+This repository brings together my portfolio, Chess by Tymur and earlier visual experiments. My original chess project used Node.js, PHP/MySQL, JWT and Pusher; the maintained version uses one Node.js server with SQLite and server-validated chess rules. See the [architecture notes](docs/ARCHITECTURE.md) for the differences between versions.
 
 ## Explore
 
@@ -25,7 +25,7 @@ pnpm install --frozen-lockfile
 pnpm start
 ```
 
-Open **http://localhost:3000**. The server creates `data/chess.sqlite` on first start. No database service, provider account or secret key is needed. Use two browser profiles (or one private window) to test multiplayer. Usernames are 3–20 letters, numbers, underscores or hyphens; passwords are 12–128 characters.
+Open **http://localhost:3000**. The server creates `data/chess.sqlite` on first start. No database service, provider account or secret key is needed. Use two browser profiles (or one private window) to test multiplayer. Usernames are 3-20 letters, numbers, underscores or hyphens; passwords are 12-128 characters.
 
 Optional: copy `.env.example` to `.env` to configure the port, origin and database path. Restart after changes. Use `pnpm dev` for server reloads.
 
