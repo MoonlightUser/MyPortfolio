@@ -1,8 +1,10 @@
 # Tymur - portfolio & multiplayer chess
 
-Computer Science student at the University of Liverpool (BSc, 2026-2029), learning web development through small projects. Interested in UK software engineering internships for Summer 2027.
+Computer Science student at the University of Liverpool (BSc Computer Science with a Year in Industry, 2026-2030), learning web development through small projects. Interested in UK software engineering internships for Summer 2027.
 
 This repository brings together my portfolio, Chess by Tymur and earlier visual experiments. My original chess project used Node.js, PHP/MySQL, JWT and Pusher; the maintained version uses one Node.js server with SQLite and server-validated chess rules. See the [architecture notes](docs/ARCHITECTURE.md) for the differences between versions.
+
+[Download my CV (PDF)](blog/Tymur-Marenych-CV.pdf)
 
 ## Explore
 

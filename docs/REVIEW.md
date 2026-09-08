@@ -17,13 +17,13 @@ Reviewed the tracked structure, main portfolio, legacy authentication/database e
 | Service secrets and sample personal accounts in tracked source  | Retired stack removed from current tree; new DB contains no seed accounts |
 | Thousands of tracked dependency files                           | Removed from current tree; lockfile and ignore rules added                |
 | Hard-coded localhost/old hosting URLs                           | Same-origin API and explicit origin configuration                         |
-| Outdated apprenticeship positioning                             | BSc 2026-2029 and Summer 2027 messaging                                   |
+| Outdated apprenticeship positioning                             | BSc 2026-2030 and Summer 2027 messaging                                   |
 | Fractal input could create excessive DOM nodes or loop forever  | Whole-number range checks, bounded loop, clearing previous points         |
 | No maintained automated checks                                  | Node tests, formatting/link checks, dependency audit and CI               |
 
 ## Owner follow-up
 
 - Revoke old provider credentials and any reused passwords. Git history was not rewritten.
-- Update the historical PDF CV separately; it is no longer advertised by the new homepage.
+- The September 2026 internship CV replaces the historical apprenticeship CV. Official Media/Computing qualification names and grades are not yet included.
 - Other repositories such as `diplom-chess` can still contain old code and credentials. They were not rewritten by this update.
 - No remote deployment has been performed. Docker verification runs in CI; this workstation has no Docker runtime.
