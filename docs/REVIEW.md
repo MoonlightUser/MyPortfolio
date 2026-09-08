@@ -24,6 +24,7 @@ Reviewed the tracked structure, main portfolio, legacy authentication/database e
 ## Owner follow-up
 
 - Revoke old provider credentials and any reused passwords. Git history was not rewritten.
-- The September 2026 internship CV replaces the historical apprenticeship CV. Official Media/Computing qualification names and grades are not yet included.
+- The September 2026 internship CV replaces the historical apprenticeship CV. BTEC Media (High Merit) and Computing (Merit) are included as provided by the owner.
 - Other repositories such as `diplom-chess` can still contain old code and credentials. They were not rewritten by this update.
 - No remote deployment has been performed. Docker verification runs in CI; this workstation has no Docker runtime.
+
